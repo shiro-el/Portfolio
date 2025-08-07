@@ -123,11 +123,11 @@
             "id": 3,
             "title": "다크 테마 기본 적용 및 테마 전환 기능 구현",
             "description": "shadcn/ui의 테마 시스템을 활용하여 다크 테마를 기본값으로 설정하고, 사용자가 라이트/다크 테마를 전환할 수 있는 기능을 구현합니다.",
-            "status": "pending",
+            "status": "done",
             "dependencies": [
               2
             ],
-            "details": "shadcn/ui의 ThemeProvider를 설정하고, 다크 테마를 기본값으로 지정합니다. hooks/useTheme.ts 커스텀 훅과 components/ThemeToggle.tsx 컴포넌트를 구현하여 테마 전환 기능을 제공합니다. 초기 진입 시 다크 테마가 적용되도록 설정합니다.",
+            "details": "shadcn/ui의 ThemeProvider를 설정하고, 다크 테마를 기본값으로 지정합니다. hooks/useTheme.ts 커스텀 훅과 components/ThemeToggle.tsx 컴포넌트를 구현하여 테마 전환 기능을 제공합니다. 초기 진입 시 다크 테마가 적용되도록 설정합니다.\n<info added on 2025-08-07T20:17:52.838Z>\n구현 내역:\n- next-themes 설치 및 `ThemeProvider` 생성(attribute=\"class\", defaultTheme=\"dark\")\n- `ThemeToggle` 추가: shadcn `Button` + lucide 아이콘으로 라이트/다크 전환\n- `layout.tsx` 수정: `<html suppressHydrationWarning>` 설정, `ThemeProvider`로 감싸고 우상단 토글 배치\n- Tailwind dark variant는 v4 방식(`.dark`)을 globals.css에서 이미 사용 중\n\n검증:\n- `npm run build` 성공, `npm run lint` 문제 없음\n\n비고:\n- 임포트 경로 수정(`@/components/ui/button`) 후 정상 빌드\n</info added on 2025-08-07T20:17:52.838Z>",
             "testStrategy": "테마 토글 버튼 클릭 시 라이트/다크 테마가 즉시 전환되는지, 초기 진입 시 다크 테마가 적용되는지 시각적으로 확인합니다."
           },
           {
@@ -1081,7 +1081,7 @@
     ],
     "metadata": {
       "created": "2025-08-07T19:03:01.682Z",
-      "updated": "2025-08-07T20:09:40.501Z",
+      "updated": "2025-08-07T20:17:57.486Z",
       "description": "Tasks for master context"
     }
   }
