@@ -103,9 +103,9 @@
             "id": 1,
             "title": "Next.js 14 및 TypeScript 프로젝트 초기화 및 App Router 구조 설계",
             "description": "Next.js 14와 TypeScript를 사용하여 프로젝트를 초기화하고, App Router 기반의 폴더 구조(app/, components/, lib/, hooks/, styles/)를 설계합니다.",
-            "status": "pending",
+            "status": "done",
             "dependencies": [],
-            "details": "npx create-next-app 명령어로 프로젝트를 생성하고, app 폴더 내에 page.tsx, layout.tsx 등 라우팅 및 레이아웃 파일을 구성합니다. components, lib, hooks, styles 폴더를 생성하여 역할별로 파일을 분리합니다.",
+            "details": "npx create-next-app 명령어로 프로젝트를 생성하고, app 폴더 내에 page.tsx, layout.tsx 등 라우팅 및 레이아웃 파일을 구성합니다. components, lib, hooks, styles 폴더를 생성하여 역할별로 파일을 분리합니다.\n<info added on 2025-08-07T20:05:41.800Z>\n## 실행 내역\n\n- npx create-next-app frontend --ts --eslint --use-npm --src-dir --app --import-alias \"@/*\" --tailwind --no-git --yes\n- 생성 구조 확인: src/app({page.tsx, layout.tsx, globals.css}), next.config.ts, eslint.config.mjs, tsconfig.json\n- 추가 폴더 생성: src/components, src/lib, src/hooks (placeholder .keep 추가)\n- 빌드: npm run build (성공)\n- 린트: npm run lint (문제 없음)\n\n## 결론\nApp Router 기반 TypeScript Next.js 프로젝트 초기화 및 기본 폴더 구조 설계 완료. 프로젝트는 TypeScript, ESLint, Tailwind CSS가 통합되어 있으며, 모듈 임포트 시 \"@/*\" 별칭을 사용할 수 있도록 설정되었습니다. 기본 폴더 구조는 src/app, src/components, src/lib, src/hooks로 구성되어 있으며, 빌드 및 린트 검사가 정상적으로 완료되었습니다.\n</info added on 2025-08-07T20:05:41.800Z>",
             "testStrategy": "프로젝트가 정상적으로 빌드 및 실행되는지 확인하고, 각 폴더에 샘플 파일을 추가하여 import/export가 정상 동작하는지 테스트합니다."
           },
           {
@@ -1081,7 +1081,7 @@
     ],
     "metadata": {
       "created": "2025-08-07T19:03:01.682Z",
-      "updated": "2025-08-07T20:01:40.912Z",
+      "updated": "2025-08-07T20:05:48.558Z",
       "description": "Tasks for master context"
     }
   }
