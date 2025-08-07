@@ -112,11 +112,11 @@
             "id": 2,
             "title": "shadcn/ui 통합 및 글로벌 스타일 적용",
             "description": "shadcn/ui 컴포넌트 라이브러리를 프로젝트에 통합하고, styles 폴더 내에 글로벌 스타일 파일을 구성합니다.",
-            "status": "pending",
+            "status": "done",
             "dependencies": [
               1
             ],
-            "details": "shadcn/ui CLI를 사용하여 컴포넌트 라이브러리를 설치하고, 필요한 의존성(Tailwind CSS, clsx, tailwind-merge 등)을 설정합니다. components/ui/ 폴더에 필요한 shadcn/ui 컴포넌트를 추가하고, styles/globals.css 파일에 기본 스타일을 적용합니다. app/layout.tsx에서 글로벌 스타일을 적용합니다.",
+            "details": "shadcn/ui CLI를 사용하여 컴포넌트 라이브러리를 설치하고, 필요한 의존성(Tailwind CSS, clsx, tailwind-merge 등)을 설정합니다. components/ui/ 폴더에 필요한 shadcn/ui 컴포넌트를 추가하고, styles/globals.css 파일에 기본 스타일을 적용합니다. app/layout.tsx에서 글로벌 스타일을 적용합니다.\n<info added on 2025-08-07T20:09:36.412Z>\n## 실행 내역\n- shadcn/ui 초기화: `npx shadcn@latest init -y`\n- 기본 UI 컴포넌트 추가: button, card, input, label, textarea, select, dialog, sheet, dropdown-menu, tabs, separator, skeleton, toggle, tooltip, badge, alert, avatar\n- Tailwind v4 검증 및 globals.css 변수 업데이트 자동 반영\n- 빌드/린트: npm run build (성공), npm run lint (문제 없음)\n\n모든 컴포넌트가 `src/components/ui/` 디렉토리에 성공적으로 설치되었으며, 유틸리티 함수는 `src/lib/utils.ts`에 생성되었습니다. 필수 UI 컴포넌트 세트 설치가 완료되어 프로젝트에서 사용할 준비가 되었습니다.\n</info added on 2025-08-07T20:09:36.412Z>",
             "testStrategy": "shadcn/ui 컴포넌트가 정상적으로 렌더링되는지 확인하고, 스타일이 올바르게 적용되는지 테스트합니다."
           },
           {
@@ -1081,7 +1081,7 @@
     ],
     "metadata": {
       "created": "2025-08-07T19:03:01.682Z",
-      "updated": "2025-08-07T20:05:48.558Z",
+      "updated": "2025-08-07T20:09:40.501Z",
       "description": "Tasks for master context"
     }
   }
