@@ -26,12 +26,12 @@ export function About() {
               About Me
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              I'm a passionate full-stack developer with {yearsOfExperience}+ years of experience 
+              I&apos;m a passionate full-stack developer with {yearsOfExperience}+ years of experience 
               creating digital experiences that make a difference. I love turning complex problems 
               into simple, beautiful, and intuitive solutions.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to 
+              When I&apos;m not coding, you can find me exploring new technologies, contributing to 
               open-source projects, or sharing knowledge with the developer community.
             </p>
             

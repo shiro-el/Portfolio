@@ -70,17 +70,17 @@ export function AboutSection() {
             <h2 className="text-3xl font-bold text-foreground mb-6">My Story</h2>
             <div className="prose prose-gray dark:prose-invert max-w-none">
               <p className="text-lg leading-relaxed mb-4">
-                Hello! I'm Jae Lee, a passionate full-stack developer with a love for creating 
+                Hello! I&apos;m Jae Lee, a passionate full-stack developer with a love for creating 
                 beautiful, functional, and user-centered digital experiences. My journey in 
-                web development began {yearsOfExperience} years ago, and I've been hooked ever since.
+                web development began {yearsOfExperience} years ago, and I&apos;ve been hooked ever since.
               </p>
               <p className="text-lg leading-relaxed mb-4">
                 I specialize in modern web technologies including React, Next.js, TypeScript, 
-                and Node.js. I'm passionate about clean code, performance optimization, and 
+                and Node.js. I&apos;m passionate about clean code, performance optimization, and 
                 creating intuitive user interfaces that make a difference.
               </p>
               <p className="text-lg leading-relaxed mb-4">
-                When I'm not coding, you can find me exploring new technologies, contributing 
+                When I&apos;m not coding, you can find me exploring new technologies, contributing 
                 to open-source projects, or sharing knowledge with the developer community. 
                 I believe in continuous learning and staying up-to-date with the latest 
                 industry trends and best practices.

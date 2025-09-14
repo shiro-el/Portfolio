@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { SITE_CONFIG } from '@/lib/constants';
 
 export function Contact() {
   const contactInfo = [
@@ -39,11 +38,11 @@ export function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or just want to chat? I'm always excited to work on 
-            new projects and meet new people. Let's create something amazing together!
+            Have a project in mind or just want to chat? I&apos;m always excited to work on 
+            new projects and meet new people. Let&apos;s create something amazing together!
           </p>
         </motion.div>
 

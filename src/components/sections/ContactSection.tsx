@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, Send, Github, Linkedin, Twitter, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, Github, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -117,7 +117,7 @@ export function ContactSection() {
               Send me a message
             </CardTitle>
             <CardDescription>
-              Fill out the form below and I'll get back to you as soon as possible.
+              Fill out the form below and I&apos;ll get back to you as soon as possible.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -200,7 +200,7 @@ export function ContactSection() {
                   className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg"
                 >
                   <p className="text-green-800 dark:text-green-200 text-sm">
-                    Thank you! Your message has been sent successfully. I'll get back to you soon.
+                    Thank you! Your message has been sent successfully. I&apos;ll get back to you soon.
                   </p>
                 </motion.div>
               )}
@@ -322,8 +322,8 @@ export function ContactSection() {
                 <h4 className="font-semibold text-foreground">Available for Work</h4>
               </div>
               <p className="text-sm text-muted-foreground">
-                I'm currently available for freelance projects and new opportunities. 
-                Let's discuss how I can help bring your ideas to life!
+                I&apos;m currently available for freelance projects and new opportunities. 
+                Let&apos;s discuss how I can help bring your ideas to life!
               </p>
             </CardContent>
           </Card>

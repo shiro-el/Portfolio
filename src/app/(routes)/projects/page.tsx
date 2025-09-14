@@ -14,7 +14,7 @@ export default function ProjectsPage() {
           My Projects
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          A collection of projects I've worked on, showcasing my skills in web development, 
+          A collection of projects I&apos;ve worked on, showcasing my skills in web development, 
           design, and problem-solving.
         </p>
       </div>
