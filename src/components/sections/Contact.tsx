@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 
 export function Contact() {
   const contactInfo = [
@@ -104,10 +105,10 @@ export function Contact() {
           </div>
 
           <Button size="lg" asChild>
-            <a href="/contact" className="flex items-center gap-2">
+            <Link href="/contact" className="flex items-center gap-2">
               Get In Touch
               <ArrowRight size={20} />
-            </a>
+            </Link>
           </Button>
         </motion.div>
       </div>

@@ -1,11 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Briefcase, GraduationCap, Award, ExternalLink } from 'lucide-react';
+import { Calendar, MapPin, Briefcase, GraduationCap, Award } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { experiences, education, certifications } from '@/lib/data/experience';
+import { experiences, education, awards } from '@/lib/data/experience';
 
 export function ExperienceSection() {
   const formatDate = (date: Date) => {
@@ -43,7 +42,7 @@ export function ExperienceSection() {
       >
         <h2 className="text-3xl font-bold text-foreground mb-4">Experience & Education</h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          My professional journey, educational background, and certifications that 
+          My professional journey, educational background, and awards that 
           have shaped my expertise in web development.
         </p>
       </motion.div>
@@ -173,7 +172,7 @@ export function ExperienceSection() {
                       <div className="flex items-center gap-2">
                         <Calendar size={16} />
                         <span>
-                          {formatDate(edu.startDate)} - {formatDate(edu.endDate)}
+                          {formatDate(edu.startDate)} - {edu.endDate ? formatDate(edu.endDate) : 'Present'}
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -201,7 +200,7 @@ export function ExperienceSection() {
           </div>
         </div>
 
-        {/* Certifications */}
+        {/* Awards */}
         <div>
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -211,13 +210,13 @@ export function ExperienceSection() {
             className="flex items-center gap-3 mb-8"
           >
             <Award className="text-primary" size={24} />
-            <h3 className="text-2xl font-bold text-foreground">Certifications</h3>
+            <h3 className="text-2xl font-bold text-foreground">Awards</h3>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certifications.map((cert, index) => (
+            {awards.map((award, index) => (
               <motion.div
-                key={cert.id}
+                key={award.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -225,24 +224,17 @@ export function ExperienceSection() {
               >
                 <Card className="h-full">
                   <CardHeader>
-                    <CardTitle className="text-lg">{cert.title}</CardTitle>
+                    <CardTitle className="text-lg">{award.title}</CardTitle>
                     <CardDescription className="font-medium">
-                      {cert.issuer}
+                      {award.issuer}
                     </CardDescription>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar size={16} />
-                      <span>{formatDate(cert.date)}</span>
+                      <span>{formatDate(award.date)}</span>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-3">
-                    <p className="text-sm text-muted-foreground">{cert.description}</p>
-                    <div className="text-xs text-muted-foreground">
-                      Credential ID: {cert.credentialId}
-                    </div>
-                    <Button variant="outline" size="sm" className="w-full">
-                      <ExternalLink size={16} className="mr-2" />
-                      Verify
-                    </Button>
+                    <p className="text-sm text-muted-foreground">{award.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>

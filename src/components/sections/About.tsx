@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { SITE_CONFIG } from '@/lib/constants';
+import Link from 'next/link';
 
 export function About() {
   const currentYear = new Date().getFullYear();
@@ -74,10 +75,10 @@ export function About() {
             </div>
 
             <Button size="lg" asChild>
-              <a href="/about" className="flex items-center gap-2">
+              <Link href="/about" className="flex items-center gap-2">
                 Learn More About Me
                 <ArrowRight size={20} />
-              </a>
+              </Link>
             </Button>
           </motion.div>
 

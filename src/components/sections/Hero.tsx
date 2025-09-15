@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SITE_CONFIG } from '@/lib/constants';
 
@@ -74,7 +75,7 @@ export function Hero() {
               <a href="#projects">View My Work</a>
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
-              <a href="/contact">Get In Touch</a>
+              <Link href="/contact">Get In Touch</Link>
             </Button>
           </motion.div>
 
